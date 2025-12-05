@@ -189,6 +189,4 @@ All permissions are handled automatically by the app.
 - Location services require device permissions
 - All ride/earnings data is still mock data (backend integration needed)
 
-## License
 
-This project is created for demonstration purposes.
