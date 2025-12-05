@@ -1,0 +1,42 @@
+<!-- 
+  This is an example AndroidManifest.xml configuration for Google Maps
+  Copy these lines into your android/app/src/main/AndroidManifest.xml file
+-->
+
+<!-- Add these permissions inside <manifest> tag -->
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+<!-- Add this inside <application> tag -->
+<meta-data
+    android:name="com.google.android.geo.API_KEY"
+    android:value="YOUR_GOOGLE_MAPS_API_KEY_HERE"/>
+
+<!-- Example complete manifest structure:
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <application
+        android:label="rozrider"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY_HERE"/>
+            
+        <activity>
+            ...
+        </activity>
+    </application>
+</manifest>
+-->

@@ -1,0 +1,40 @@
+<!-- 
+  This is an example Info.plist configuration for iOS
+  Add these keys to your ios/Runner/Info.plist file
+-->
+
+<!-- Location Permissions -->
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>We need your location to show you on the map and find nearby rides</string>
+
+<key>NSLocationAlwaysUsageDescription</key>
+<string>We need your location to show you on the map and find nearby rides</string>
+
+<!-- Camera Permission -->
+<key>NSCameraUsageDescription</key>
+<string>We need camera access to take photos for document verification</string>
+
+<!-- Photo Library Permissions -->
+<key>NSPhotoLibraryUsageDescription</key>
+<string>We need photo library access to upload documents</string>
+
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>We need photo library access to save documents</string>
+
+<!-- Example AppDelegate.swift configuration for Google Maps:
+import UIKit
+import Flutter
+import GoogleMaps
+
+@UIApplicationMain
+@objc class AppDelegate: FlutterAppDelegate {
+  override func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    GMSServices.provideAPIKey("YOUR_GOOGLE_MAPS_API_KEY_HERE")
+    GeneratedPluginRegistrant.register(with: self)
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+}
+-->
